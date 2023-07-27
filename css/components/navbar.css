@@ -37,3 +37,8 @@ background-color: var(--white);
 .navbar .navbar__content .navbar__links a:hover {
   color: var(--tertiary-color)
 }
+
+.navbar .navbar__content .navbar__mobile,
+.navbar .navbar__content .navbar__mobile .mobile__links {
+  display: none;
+}
