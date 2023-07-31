@@ -29,11 +29,13 @@ background-color: var(--white);
   display: inline-block;
 }
 .navbar .navbar__content .navbar__links a:hover {
-  color: var(--tertiary-color);
+  color: var(--tertiary-color)
 }
 .navbar.active {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
+
+
 .navbar .navbar__content .navbar__mobile,
 .navbar .navbar__content .navbar__mobile .mobile__links {
   display: none;
