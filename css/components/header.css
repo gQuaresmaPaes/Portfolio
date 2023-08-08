@@ -9,6 +9,17 @@ header .header__left {
     max-width: 62rem;
     flex: 1;
 }
+
+header #elementName::after{
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1;}
+    100% { opacity: 0;}
+}
+
 header .header__left p {
     margin-top: 2rem;
     margin-bottom: 4rem;
