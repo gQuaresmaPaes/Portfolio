@@ -4,10 +4,12 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: var(--font-family);
+  background-color: #CCCCCC;
 }
 
 html {
   font-size: 62.5%;
+
 }
 
 body {
@@ -122,5 +124,15 @@ p:not(:last-of-type),
 @media only screen and (max-width: 425px) {
   h1 {
     font-size: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .max-width {
+    padding: 0 1rem;
   }
 }

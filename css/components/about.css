@@ -38,3 +38,17 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .about__left {
+        max-width: 40rem;
+        text-align: center;
+    }
+    .about .about__right {
+        text-align: center;
+    }
+}

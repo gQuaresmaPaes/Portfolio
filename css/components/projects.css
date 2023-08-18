@@ -23,9 +23,11 @@
 .projects ul li .image img {
     width: 100%;
     min-width: 40rem;
-    max-width: 47rem;
+    max-width: 50rem;
     height: auto;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
+
 .projects ul li .project__info {
     max-width: 47rem;
 }
