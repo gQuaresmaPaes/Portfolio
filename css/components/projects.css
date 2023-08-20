@@ -27,6 +27,15 @@
     height: auto;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.projects ul li .image img:hover {
+    width: 100%;
+    min-width: 40rem;
+    max-width: 60rem;
+    height: auto;
+    transition: 1s;
 }
 
 .projects ul li .project__info {
