@@ -346,7 +346,7 @@ footer {
     /* Regras css */
 
     html, body {
-        overflow: hidden;
+        overflow: auto;
     }
 
     .navbar-items li {
@@ -374,5 +374,28 @@ footer {
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Regras css */
+    body {
+        font-size: 14px;
+        overflow: auto;
+    }
+    h1, h2, h3 {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    .main-banner {
+        padding: 1em 0;
+        height: 15em;
+    }
+    .logo {
+        width: 50px;
+        margin-top: 10px;
     }
 }

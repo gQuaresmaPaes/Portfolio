@@ -32,7 +32,7 @@
 
 .projects ul li .image img:hover {
     width: 100%;
-    min-width: 40rem;
+    min-width: 50rem;
     max-width: 60rem;
     height: auto;
     transition: 1s;
