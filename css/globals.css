@@ -25,6 +25,14 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  transition: 1s;
+}
+
+.navbar__links li a:hover {
+  border-radius: 10px;
+  background-color: #96969679;
+  text-decoration: none;
+  transition: 1s;
 }
 
 h1 {
@@ -123,6 +131,7 @@ p:not(:last-of-type),
 }
 
 @media only screen and (max-width: 425px) {
+
   h1 {
     font-size: 4.2rem;
   }
