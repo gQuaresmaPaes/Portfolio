@@ -48,6 +48,9 @@
     font-weight: 500;
     text-decoration: underline;
 }
+.projects ul li .project__info h3 a{
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 768px){
     .projects ul li,
