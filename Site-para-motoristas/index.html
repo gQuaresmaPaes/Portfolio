@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Planilha para Motoristas de App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Substitua o script do SheetJS por este: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 Gerador de Planilha para Motoristas</h1>
+        
+        <div class="form-group">
+            <label>Modelo do Carro:</label>
+            <input type="text" id="modelo-carro" value="HB20s">
+        </div>
+
+        <!-- Abas de entrada de dados -->
+        <div class="tabs">
+            <button type="button" class="tab-btn active" data-tab="custos">Custos Fixos</button>
+            <button type="button" class="tab-btn" data-tab="operacao">Operação</button>
+        </div>
+
+        <div id="custos" class="tab-content active">
+            <h3>💵 Custos Mensais</h3>
+            <div id="custos-container"></div>
+            <button type="button" id="add-custo">➕ Adicionar Custo</button>
+            <button id="next-to-operacao" class="next-btn">➡️ AVANÇAR PARA OPERAÇÃO</button>
+        </div>
+
+        <div id="operacao" class="tab-content">
+            <h3>📊 Dados de Operação</h3>
+            <div class="form-group">
+                <label>Dias por semana:</label>
+                <input type="number" id="dias-semana" value="5" min="1" max="7">
+            </div>
+            <div class="form-group">
+                <label>Receita média por dia (R$):</label>
+                <input type="number" id="receita-dia" value="350" step="0.01">
+            </div>
+            <div class="form-group">
+                <label>Combustível por dia (R$):</label>
+                <input type="number" id="combustivel-dia" value="121.80" step="0.01">
+            </div>
+            <button id="export-excel" class="export-btn">📤 GERAR PLANILHA EXCEL</button>
+        </div>
+    </div>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
